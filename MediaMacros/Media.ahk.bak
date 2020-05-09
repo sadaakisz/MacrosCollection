@@ -1,0 +1,10 @@
+﻿#NoEnv
+Menu, Tray, Icon, Media.ico,, 1
+#SingleInstance, Force
+PGUP::Send {Volume_Up}
+PGDN::Send {Volume_Down}
+Insert::Send {Volume_Mute}
+^Down:: Send {Media_Play_Pause}
+^Left::Send {Media_Prev}
+^Right::Send {Media_Next}
+
