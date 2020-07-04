@@ -1,6 +1,7 @@
 #NoEnv
 Menu, Tray, Icon, FastActions.ico,, 1
 #SingleInstance, Force
+CoordMode, Mouse, Screen
 
 ; Ctrl+Shift+C: Google Search highlighted text
 ^+c::
@@ -26,4 +27,10 @@ return
 MouseGetPos, MouseX, MouseY
 PixelGetColor, color, %MouseX%, %MouseY%, RGB
 MsgBox The color at the current cursor position is %color%.
+return
+
+; Win+Shift+D: Get mouse location
+#+d::
+MouseGetPos, MouseX, MouseY
+MsgBox The current cursor position is %MouseX%, %MouseY%.
 return
